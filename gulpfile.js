@@ -4,7 +4,8 @@ var sass = require('gulp-sass');
 var browserSync =  require('browser-sync');
 //compile sass to css and auto inject to browsers to src “node-modules” folder 
 gulp.task('sass',function(){
-gulp.src(['./node_modules/bootstrap/scss/bootstrap.scss' ,  './node_modules/bootstrap/scss/*.scss'  , './scss/styles.scss','scss/style.scss')
+gulp.src(['./node_modules/bootstrap/scss/bootstrap.scss' ,  './node_modules/bootstrap/scss/*.scss' , 
+	        './scss/styles.scss' ])
 .pipe(sass({includePaths: ['scss']}))
 .pipe(gulp.dest('./css'))
 });

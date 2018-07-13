@@ -1,335 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body >
-
- 
-    <!-- <div class="container-fluid  bg-dark sticky-top">
-    	<div class="row">
-
-
-    		<div class="col-md-12">
-    			 <a class="navbar-brand  justify-content-left" href="#">Logo</a>
-    		</div>
-    		<div class="col-md-12">
-
-    			<ul class="nav  justify-content-end">
-    				
-  					<li class="nav-item">
-    				     <a class="nav-link" href="#">Home</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">About</a>
-  					</li>
-  					<li class="nav-item">
-    					<a class="nav-link" href="#">Services</a>
-  					</li>
-  					<li class="nav-item">
-   						<a class="nav-link " href="#">Contact us</a>
- 					</li>
-					</ul>
-    		</div>
-    	</div>
-    </div> -->
-  
-  <div class="container-fluid  bg-dark sticky-top">
-    	<div class="row">
-
-
-    		<div class="col-md-12 ">
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <!-- Brand -->
-  <a class="navbar-brand" href="#">Logo</a>
-
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-    <ul class="navbar-nav justify">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="#">About us</a>
-      </li> 
-    </ul>
-  </div> 
-</nav>
-</div></div></div>
-
-  <div class="container-fluid">
-    <!-- Control the column width, and how they should appear on different devices -->
-    <div class="row welcome text-center">
-
-    		<div class="col-md-12">
-    			<h1>Carousel</h1>
-    		</div>
-      <div class="col-xl-12" >
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="./img/property_3.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./img/property_2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="./img/greenFields.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-    </div>
-  </div>
-    <br>
-
-    <div class="container-fluid padding">
-  	<div class="row welcome text-center">
-  		<div class="col-md-12">
-           <h1 class="display-4" >Hero mage</h1>
-  		</div>
-  		<img class="card-img-top" src="./img/martin.jpg" alt="martin">
-
-    </div>
-   </div>
-    <!-- Three column section strat -->
-<!-- Meet the team  three column section below-->
- 
-  <div class="container-fluid padding">
-  	<div class="row welcome text-center">
-  		<div class="col-md-12">
-           <h1 class="display-4" >Meet the team</h1>
-  		
-  		    
-	  </div>
-    </div>  
-   </div>
-  
-  
-  <!-- cards -->
-  
- <div class="container-fluid padding">
- 	<div class=" row padding">
-
-         <div class="col-md-4">
-
-         	<div class="card">
-         		<img class="card-img-top" src="./img/martin.jpg" alt="martin">
-         		<div class="card-body">
-         			<h4 class="card-title">Martin</h4>
-         			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repellat saepe accusantium placeat at, deserunt.</p>
-                   <a class="btn btn-outline-secondary" href="#">See Profile</a>
-
-         	   </div>
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="./css/styles.css" rel="stylesheet">
+   </head>
+   <body >
+      <div class="container-fluid  bg-dark sticky-top">
+         <div class="row ">
+            <div class="col-md-12 ">
+               <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                  <!-- Brand -->
+                  <a class="navbar-brand" href="#"><img src="./img/lenovp.png" alt="logo"></a>
+                  <a class="navbar-brand" href="#">Lenovo Smart</a>
+                  <!-- Toggler/collapsibe Button -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" aria-label="screen"  data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- Navbar links -->
+                  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                     <ul class="navbar-nav justify">
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                           Products
+                           </a>
+                           <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Lenovo Idea pad core 136 Gen-4GB</a>
+                              <a class="dropdown-item" href="#">Lenovo Core 15th Gen-</a>
+                              <a class="dropdown-item" href="#">Lenovo V110</a>
+                           </div>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link"  data-toggle="modal" data-target="#myModalLogin" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link"  data-toggle="modal" data-target="#myModal" href="#">Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#">Account</a>
+                        </li>
+                        <li class="nav-item">
+                           <form class="form-inline" action="/searchform.html">
+                              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                              <button class="btn btn-success" type="submit">Search</button>
+                           </form>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
             </div>
- 	   </div>
-
-	
-      <div class="col-md-4">
-
-         	<div class="card">
-         		<img class="card-img-top" src="./img/dancing.jpg" alt="dancing">
-         		<div class="card-body">
-         			<h4 class="card-title">Dancing</h4>
-         			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repellat saepe accusantium placeat at, deserunt.</p>
-                   <a class="btn btn-outline-secondary" href="#">See Profile</a>
+         </div>
+      </div>
+      <section>
+        
+         <div class="container-fluid ">
+            <!-- Control the column width, and how they should appear on different devices -->
+            <div class="row welcome text-center ">
+               <div class="col-xl-12  ">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <img class="d-block w-100" src="./img/laptop1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                           <img class="d-block w-100" src="./img/laptop2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                           <img class="d-block w-100" src="./img/laptop3.jpg" alt="Third slide">
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br>
+      <section>
+         <div class="container-fluid padding bg-color-yellow">
+            <div class="row welcome text-center ">
+               <div class="col-md-12 ">
+                  <h1 class="display-4 bg-color-yellow" >Latest Release of Lenovo</h1>
+               </div>
+               <img class="card-img-top" src="./img/laptop11.jpg" alt="martin">
+            </div>
+         </div>
+      </section>
+      <br>
+      <!-- Three column section strat -->
+      <!-- Meet the team  three column section below-->
+      <!-- cards -->
+      <section>
+         <div class="container-fluid padding">
+            <div class=" row padding">
+               <div class="col-md-3">
+                  <div class="card">
+                     <img class="card-img-top" src="./img/laptop8.jpg" alt="lapy8">
+                     <div class="card-body">
+                        <h4>TINY FOOTPRINT</h4>
+                        <h1 class="font-sz"> Get the ThinkPad M710 Tiny, 16GB RAM for a never before price.</h1>
+                        <a class="btn btn-outline-secondary" href="#">See Features</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="card">
+                     <img class="card-img-top" src="./img/laptop5.png" alt="lapy5">
+                     <div class="card-body">
+                        <h4>WEB EXCLUSIVE </h4>
+                        <h1 class="font-sz"> Laptops in specials colours and  high-end ONLY on Lenovo.com.</h1>
+                        <a class="btn btn-primary" href="#">See Features</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="card">
+                     <img class="card-img-top" src="./img/laptop6.jpg" alt="lapy6">
+                     <div class="card-body">
+                        <h4 >BACK TO COLLEGE</h4>
+                        <h1 class="font-sz"> Get 2 years additional warranty* and 1 year Premium Care*</h1>
+                        <a class="btn btn-success" href="#">See Features</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="card">
+                     <img class="card-img-top" src="./img/laptop7.png" alt="lapy7">
+                     <div class="card-body">
+                        <h4>PC BUYING GUIDE</h4>
+                        <h1 class="font-sz" > Can’t decide on the ideal laptop? Let us help you </h1>
+                        <a class="btn btn-info" href="#">See Features</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br>
+      <br>
+      <!--  -->
+      <section>
+        
+         <!-- Two column section -->
+         <div class="container-fluid padding">
+            <div class="row padding  ">
+               <div class="col-md-12 col-lg-6 bg-purple">
+                  <section data-spy="scroll" data-target="navbar" data-offset="50">
+                     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <div class="container-fluid">
+                           <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>                        
+                              </button>
+                              <a class="navbar-brand" href="#">OUR VISION</a>
+                           </div>
+                           <div>
+                              <div class="collapse navbar-collapse" id="myNavbar">
+                                 <ul class="nav navbar-nav">
+                                    <li  class="bg-color-yellow"><a href="#section1">RELIABILITY</a></li>
+                                    <li class="bg-blue"><a href="#section2">SUPPORT</a></li>
+                                    <li class="bg-1"><a href="#section3">WARRENTY</a></li>
+                                    <li class="dropdown bg-purple">
+                                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">TERMS<span class="caret"></span></a>
+                                       <ul class="dropdown-menu">
+                                          <li><a href="#section41">EXCHANGE</a></li>
+                                          <li><a href="#section42">USER FRIENDLY</a></li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </nav>
+                     <div id="section1" class="container-fluid">
+                        <p>SUPPORT: section 1</p>
+                     </div>
+                     <div id="section2" class="container-fluid">
+                        <p>WARRANTY: section 2</p>
+                     </div>
+                     <div id="section3" class="container-fluid">
+                        <p> TERMS&CONSl: section 3</p>
+                     </div>
+                     <div id="section41" class="container-fluid">
+                        <p> EXCHANGE : section 4.1</p>
+                     </div>
+                     <div id="section42" class="container-fluid">
+                        <p>USER FRIENDLY :section 4.2  </p>
+                     </div>
+                  </section>
+               </div>
+               <br><br>
+               <div class="col-md-12 col-lg-6  bg-orange ">
+                  <div class="media">
+                     <div class=" media-left  bg-blue ">
+                        <img src="./img/media1.png" class=" media-object" alt="greenfields">
+                     </div>
+                     <div class="media-body">
+                        <h4 class="media-heading">John Doe says </h4>
+                        <p>Lenono is...</p>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="media">
+                     <div class=" media-left bg-blue ">
+                        <img src="./img/media2.png" class=" media-object" alt="greenfields">
+                     </div>
+                     <div class="media-body">
+                        <h4 class="media-heading">Charle says </h4>
+                        <p>Lenova is..</p>
+                     </div>
+                  </div>
+                  <br>
+                  <div class="media">
+                     <div class=" media-left  bg-blue ">
+                        <img src="./img/media3.png" class=" media-object" alt="greenfields">
+                     </div>
+                     <div class="media-body">
+                        <h4 class="media-heading">Social Media says </h4>
+                        <p>Lenova is ...</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br>
+      <section class="bg-1">
+         <div class="container padding">
+            <div class="row welcome text-center bg-1">
+               <div class="col-md-12">
+                  <h4 class="display-8 bg-1" >You wanna test below lapy models and features </h4>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid padding">
+            <div class="row welcome text-center">
+               <div class="col-md-12">
+                  <p>
+                  <h1>
+                     <a class="btn btn-primary" 
+                        data-toggle="collapse" 
+                        href="#multiCollapseExample1" 
+                        role="button" 
+                        aria-expanded="false" 
+                        aria-controls="multiCollapseExample1">ThinkPad M710
+                     </a>
+                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"   aria-label="btn tablet"  aria-expanded="false" aria-controls="multiCollapseExample2">Tablet z320</button>
+                     <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-label="btn-close" aria-controls="multiCollapseExample1 multiCollapseExample2">close</button></h1>
+                     <!-- Button to Open the Modal -->
+                     <!-- The Modal -->
+                     <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                           <div class="modal-content">
+                              <!-- Modal Header -->
+                              <div class="modal-header">
+                                 <h4 class="modal-title">Register</h4>
+                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              </div>
+                              <!-- Modal body -->
+                              <div class="modal-body">
+                                 <div class="form-group">
+                                    <h4 class="justify-content-left"> <label for="email">Email:</label></h4>
+                                    <input type="email" class="form-control" id="Loginemail" placeholder="Enter email" name="email">
+                                 </div>
+                                 <div class="form-group">
+                                    <h4 class="justify-content-left"> <label for="pwd">Password:</label></h4>
+                                    <input type="password" class="form-control" id="loginPwd" placeholder="Enter password" name="pwd">
+                                 </div>
+                                 <div class="checkbox">
+                                    <h4 class="justify-content-left"> <label><input type="checkbox" name="remember"> Remember me</label></h4>
+                                 </div>
+                              </div>
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                 <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="closebtn">Close</button>
+                                 <button type="submit" class="btn btn-default">Submit</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   
-
-         	     </div>
+                  
+               </div>
             </div>
- 	   </div>
-
- 	<div class="col-md-4">
-
-         	<div class="card">
-         		<img class="card-img-top" src="./img/kasi.jpg" alt="kasi">
-         		<div class="card-body">
-         			<h4 class="card-title">Ganga</h4>
-         			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repellat saepe accusantium placeat at, deserunt.</p>
-                   <a class="btn btn-outline-secondary" href="#">See Profile</a>
-
-         	    </div>
-             </div>
- 	</div>
-
- </div>
-</div>
-
-
- <div class="container-fluid padding">
-  	<div class="row welcome text-center">
-  		<div class="col-md-12">
-           <h1 class="display-4" >Two column section below</h1>
-  		</div>
-  		<hr class="my-4">
-
-    </div>
-   </div>
-  
-
-<!-- Two column section -->
-<div class="container-fluid padding">
-
-	<div class="row padding">
-		<div class="col-md-12 col-lg-6 ">
-			<h2>Our India..</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis assumenda perspiciatis voluptatibus, a. Amet quas, eos at quaerat, consequatur fugit debitis deserunt impedit culpa fuga assumenda officiis distinctio corporis temporibus? Exercitationem illo nostrum labore incidunt inventore alias, ullam eligendi repellendus eos atque optio corrupti itaque nulla possimus debitis harum quidem!</p>
-			<br>
-			
-		</div>
-		<div class="col-lg-6">
-			<img src="./img/greenFields.jpg" class="img-fluid" alt="greenfields">
-		</div>
-
-	</div>
-</div>
-
-
-
- <div class="container-fluid padding">
-  	<div class="row welcome text-center">
-  		<div class="col-md-12">
-           <h2 class="display-4" >collapsed buttons with animated images</h2>
-  		</div>
-  		<hr class="my-4">
-
-    </div>
-   </div>
-  
-
-<div class="container-fluid padding">
-
-	<div class="row welcome text-center">
-
-		<div class="col-md-12">
-<p><h1>
-    <a class="btn btn-primary" 
-       data-toggle="collapse" 
-       href="#multiCollapseExample1" 
-       role="button" 
-       aria-expanded="false" 
-       aria-controls="multiCollapseExample1">Toggle first element
-    </a>
-
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"   aria-label="btnlable1aria-label="btnlable" " aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-label="btnlable2" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-   <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Open modal
-</button>
-
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+      </section>
+      <!-- The Modal -->
+      <div class="modal" id="myModalLogin">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Login</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <div class="form-group">
+                     <h4 class="justify-content-left"> <label for="email">Email:</label></h4>
+                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                  <div class="form-group">
+                     <h4 class="justify-content-left"> <label for="pwd">Password:</label></h4>
+                     <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                  </div>
+                  <div class="checkbox">
+                     <h4 class="justify-content-left"> <label><input type="checkbox" name="remember"> Remember me</label></h4>
+                  </div>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="closebtn">Close</button>
+                  <button type="submit" class="btn btn-default">Submit</button>
+               </div>
+            </div>
+         </div>
       </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
+      <div class="row ">
+         <div class=" col ">
+            <div class=" collapse multi-collapse" id="multiCollapseExample1">
+               <div class=" card card-body">
+                  <p > Processor: 2.4 GHz Intel Core i3-370M. <br>
+                     Chipset: Intel HM55<br>
+                     RAM: up to 4GB.<br>
+                     Graphics: NVIDIA GeForce 310M.<br>
+                     Display: 15.6 inches <br>
+                     Storage: 640GB 5400RPM.<br>
+                     Dimensions (mm): 377 x 250 x 30
+                  </p>
+                  <div class="col-sm-6 col-md-3">
+                     <img src="./img/laptop14.jpg" class="gif" alt="cartoon" >
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="  col">
+            <div class="  collapse multi-collapse" id="multiCollapseExample2">
+               <div class="card card-body">
+                  <p> Processor: 2.4 GHz Intel Core i3-370M. <br>
+                     Chipset: Intel HM55<br>
+                     RAM: up to 4GB.<br>
+                     Graphics: NVIDIA GeForce 310M.<br>
+                     Display: 15.6 inches <br>
+                     Storage: 640GB 5400RPM.<br>
+                     Dimensions (mm): 377 x 250 x 30
+                  </p>
+                  <div class="col-sm-6 col-md-3">
+                     <img src="./img/laptop15.jpg" class="gif" alt="tenor">
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      
+      <br>
+      <section   id="form1-e">
+         <div class=" bg-purple container">
+            <div class="row justify-content-center">
+               <div class="title col-12 col-lg-8">
+                  <h4 class=" align-center pb-3  display-4">
+                  CONTACT FORM
+                  </h4>
+                  <h3 class="align-center pb-3  display-5">
+                     Easily add subscribe and contact Lenovo.
+                  </h3>
+               </div>
+            </div>
+         </div>
+         <div class=" bg-purple container">
+            <div class="row justify-content-center">
+               <div class="media-container-column col-lg-8" data-form-type="formoid">
+                  <div data-form-alert="" hidden="">
+                     Thanks for filling out the form!
+                  </div>
+                  <form  action="https://sapient.com/" method="post" data-form-title="Contact Form">
+                     <input type="hidden" name="email" data-form-email="true" value="val" data-form-field="Email">
+                     <div class="row row-sm-offset">
+                        <div class="col-md-4 multi-horizontal" data-for="name">
+                           <div class="form-group">
+                              <label class="form-control-label display-7" for="name-form1-e">Name</label>
+                              <input type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-e">
+                           </div>
+                        </div>
+                        <div class="col-md-4 multi-horizontal" data-for="email">
+                           <div class="form-group">
+                              <label class="form-control-label display-7" for="email-form1-e">Email</label>
+                              <input type="email" class="form-control" name="email" data-form-field="Email" required="" id="email-form1-e">
+                           </div>
+                        </div>
+                        <div class="col-md-4 multi-horizontal" data-for="phone">
+                           <div class="form-group">
+                              <label class="form-control-label  display-7" for="phone-form1-e">Phone</label>
+                              <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="phone-form1-e">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group" data-for="message">
+                        <label class="form-control-label display-7" for="message-form1-e">Message</label>
+                        <textarea  class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-e"></textarea>
+                     </div>
+                     <span class="input-group-btn">
+                     <button  type="submit" class="btn btn-primary btn-form display-4">SEND FORM</button>
+                     </span>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br>
+      <section  data-bg-video="https://www.youtube.com/watch?v=8oCVVphaG44" id="info4-l">
+         <div class="container">
+            <div class="justify-content-center  bg-orange row">
+               <div class="media-container-column title col-12 col-md-10">
+                  <h2 class="align-right pb-3 display-2">
+                     BACKGROUND VIDEO
+                  </h2>
+                  <h3 class=" align-right pb-3 display-5">
+                     Shape your life with sharp design and refine Laptops
+                  </h3>
+                  <p class="align-right display-7">
+                     Make your own life in a few clicks! Lenovo helps you cut down shopping time by providing you with a flexible Lenovo online SMART CART. 
+                  </p>
+                  <div class="align-right py-4">
+                     <a class="btn btn-primary display-4" href="https://lenovo.com">WE SUPPORT</a>
+                     <a class="btn btn-success display-4" href="https://lenovo.com">LIVE DEMO</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br>
+      <section  class="footer-align" id="footer1-m">
+      <div class=" bg-2 container-fluid">
+         <div class="row content   text-white">
+            <div class="col-12 col-md-3">
+               <div class="media-wrap">
+                  <a href="https://lenovo.com/">
+                  <img src="./img/lenovpsec.png" alt="lenovo">
+                  </a>
+               </div>
+            </div>
+            <div class="col-12 col-md-3  display-7">
+               <h5 class="pb-3">
+                  Address
+               </h5>
+               <p >
+                  1234 Street Name
+                  <br>City, AA 99999
+               </p>
+            </div>
+            <div class="col-12 col-md-3  display-7">
+               <h5 class="pb-3">
+                  Contacts
+               </h5>
+               <p >
+                  Email: support@mobirise.com
+                  <br>Phone: +1 (0) 000 0000 001
+                  <br>Fax: +1 (0) 000 0000 002
+               </p>
+            </div>
+            <div class="col-12 col-md-3  display-7">
+               <h5 class="pb-3">
+                  Links
+               </h5>
+            </div>
+         </div>
+         <div class="footer-lower">
+            <div class="media-container-row">
+               <div class="col-sm-12">
+                  <hr>
+               </div>
+            </div>
+            <div class="media-container-row  ">
+               <div class="col-sm-6 copyright">
+                  <p class="display-7">
+                     © Copyright 2018 Lenovo - All Rights Reserved
+                  </p>
+               </div>
+               <div class="col-md-6">
+                  <div class="social-list align-right">
+                     <div class=" soc-item">
+                        <a href="https://twitter.com/lenovo" target="_blank">
+                        <span class="socicon-twitter socicon "></span>
+                        </a>
+                     </div>
+                     <div class="soc-item">
+                        <a href="https://www.facebook.com/pages/lenovo" target="_blank">
+                        <span class="socicon-facebook socicon "></span>
+                        </a>
+                     </div>
+                     <div class="soc-item">
+                        <a href="https://www.youtube.com/c/lenovo" target="_blank">
+                        <span class="socicon-youtube socicon"></span>
+                        </a>
+                     </div>
+                     <div class="soc-item">
+                        <a href="https://instagram.com/lenovo" target="_blank">
+                        <span class="socicon-instagram socicon "></span>
+                        </a>
+                     </div>
+                     <div class="soc-item">
+                        <a href="https://plus.google.com/u/0/+lenovo" target="_blank">
+                        <span class="socicon-googleplus socicon "></span>
+                        </a>
+                     </div>
+                     <div class="soc-item">
+                        <a href="https://www.behance.net/lenovo" target="_blank">
+                        <span class="socicon-behance socicon "></span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-
-    </div>
-  </div>
-</div>
-</h1>
-</p>
-</div>
-</div>
-
-<div class="row">
-
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            <div class="col-sm-6 col-md-3">
-				<img src="./img/cartoon.gif" class="gif" alt="cartoon" >
-		    </div>		
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
-      <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-		 <div class="col-sm-6 col-md-3">
-				<img src="./img/tenor.gif" class="gif" alt="tenor">
-		    </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-   </div></div>
-
- <footer>
-  	<div class="container-fluid bg-dark">
-  		<div class="row text-center padding">
-        <div class="col-md-12 social padding">
-        	<h4> @copy 2018</<h4></h4>>
-        </div>
-
-  		<div class="col-md-12 social padding">
-  			<a href="#" href="#"><!-- <i class="fab fa-facebook"></i> -->
-  				<i style="font-size:24px" class="fa">&#xf082;</i> </a>
-  			  			<a href="#" href="#">
-  				<i style="font-size:24px" class="fa">&#xf2b3;</i></a>
-  			<!-- <a href="#" ><i class="fab fa-instagram"></i> -->
-  				<a href="#" href="#">
-  					<i style="font-size:24px" class="fa">&#xf099;</i></a>
-  			
-  		</div>
-  	</div>
-          
-
-
-  	</div>
-  </div>
-  </footer>
-</body>
+      </section>
+   </body>
 </html>
-

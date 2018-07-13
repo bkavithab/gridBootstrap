@@ -1,0 +1,47 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add node-sass
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.11.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EPROTO: protocol error, symlink '../../../dev-ip/lib/dev-ip.js' -> '/vagrant/gridBootstrap/node_modules/browser-sync/node_modules/.bin/dev-ip'
+
+npm manifest: 
+  {
+    "name": "gridBootstrap",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bootstrap": "^4.1.1",
+      "jquery": "^3.3.1",
+      "popper.js": "^1.14.3"
+    },
+    "devDependencies": {
+      "browser-sync": "^2.24.5",
+      "gulp": "^3.9.1",
+      "gulp-sass": "^4.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
